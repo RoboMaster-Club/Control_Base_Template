@@ -2,9 +2,9 @@
 This repository contains the shared control code between Purdue Robomasters robots.
 
 # Table of Contents
-- [Repository Initialization]()
-- [VSCode Environment Setup]()
-- [Development Conventions]()
+- [Repository Initialization](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#repository-initialization-guide)
+- [VSCode Environment Setup](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#vscode-environment-setup)
+- [Development Conventions](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#development-conventions)
 
 ## Repository Initialization Guide
 ``` bash
