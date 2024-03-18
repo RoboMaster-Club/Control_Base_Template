@@ -2,19 +2,24 @@
 This repository contains the shared control code between Purdue Robomasters robots.
 
 # Table of Contents
-- [Repository Initialization](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#repository-initialization-guide)
+- [Repository Initialization](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#repository-initialization)
 - [VSCode Environment Setup](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#vscode-environment-setup)
+   1) [Install Tools](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#install-tools)
+   2) [VSCode Extension Setup](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#vscode-extension-setup)
+   3) [Usage](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#usage)
+   4) [Common Issues](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#common-issues)
+
 - [Development Conventions](https://github.com/RoboMaster-Club/Control_Base_Template/tree/main?tab=readme-ov-file#development-conventions)
 
-## Repository Initialization Guide
+# Repository Initialization
 ``` bash
 git clone https://github.com/RoboMaster-Club/Control_Base_Template.git
 cd Control_Base_Template
 git submodule update --init
 ```
 
-## VSCode Environment Setup
-### Install tools
+# VSCode Environment Setup
+## Install Tools
 Download VSCode from [here](https://code.visualstudio.com/download)
 
 **Windows**
@@ -36,7 +41,7 @@ brew install openocd
 
 **Make sure to add necessary tools to VSCode settings.json** Alternatively, you can add them to PATH variable to allow them to be accessed globally.
 
-### Set up VSCode
+### VSCode Extension Setup
 - Add the tool path for OpenOCD and make tools.
 
 - Install the VSCode extension [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug) to enable ARM microcontroller debugging.
@@ -45,7 +50,9 @@ brew install openocd
    - **Windows:** ```"cortex-debug.gdbPath": "c:/msys64/mingw64/bin/gdb-multiarch.exe"```.
    - **MacOS:** ```"cortex-debug.gdbPath": "/opt/homebrew/bin/arm-none-eabi-gdb"```.
 
-## How to use
+- Add GCC toolchain path to build.json ```"C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/arm-none-eabi-gcc.exe"``` to  link the standard library header files, such as `stdint.h`, `stdlib.h`, `math.h`. `
+
+## Usage
 ### Building the Project
 Open the Command Palatte in VSCode: [Ctrl+Shift+P].
 Then, select **Tasks: Run Build Tasks** and pick the appropriate build task.
@@ -83,13 +90,6 @@ If you don't want to mess with the system path, you could also add local openocd
 
 **Note**
 restarting vscode might be needed for new environment variable to take effect.
-
-## Tips
-### VSCode IntelliSense Configuration
-```
-"C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/arm-none-eabi-gcc.exe"
-```
-adding this would link the standard library header files, such as `stdint.h`, `stdlib.h`, `math.h`.
 
 # Development Conventions
 **All names must use snake_case.**
