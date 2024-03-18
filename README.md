@@ -1,14 +1,19 @@
 # Purdue Robomasters Control Base Template
 This repository contains the shared control code between Purdue Robomasters robots.
 
-# Repository Initialization Guide
+# Table of Contents
+- [Repository Initialization]()
+- [VSCode Environment Setup]()
+- [Development Conventions]()
+
+## Repository Initialization Guide
 ``` bash
 git clone https://github.com/RoboMaster-Club/Control_Base_Template.git
 cd Control_Base_Template
 git submodule update --init
 ```
 
-## VSCode MAKEFILE environment setup guide
+## VSCode Environment Setup
 ### Install tools
 Download VSCode from [here](https://code.visualstudio.com/download)
 
@@ -48,7 +53,6 @@ Then, select **Tasks: Run Build Tasks** and pick the appropriate build task.
 - **MacOS:** build (Darwin).
 
 You can use the shortcut [Ctrl+Shift+B] if you set it as the default build task.
-
 
 ### Debugging the Project
 Navigate to [Run and Debug] in VSCode or press [Ctrl+Shift+D].
