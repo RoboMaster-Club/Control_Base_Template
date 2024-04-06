@@ -1,3 +1,5 @@
+This repository is DEPRECATED. Refer to [RoboMaster-Club/control-base](https://github.com/RoboMaster-Club/control-base) for new updates.
+
 # Purdue Robomasters Control Base Template
 This repository contains the shared control code between Purdue Robomasters robots.
 
